@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Displaying CSS file</title>
 </head>
+
+<!-- <body>: The Document Body element https://devdocs.io/html/element/body-->
 <body>
+
     <!-- Using https://devdocs.io/html/ for information on elements. -->
     <!-- header -->
-    <header>This is a header element. <br>
+    <header>
+        <h1>Displaying CSS</h1>
+        This is a header element. <br>
         This page is just a simple page to display as many 
         basic elements as possible without any extra attributes and 
         how they will look with the css file selected. <br>
     </header>
 
-    <!-- Line break <br> -->
+    <!-- <br>: The Line Break element-->
     <br>Line break: <br>
 
     <!-- Div -->
@@ -24,34 +29,65 @@
     </div>
 
     <!-- Headers -->
-    <h1>Heading level 1</h1>
-    <h2>Heading level 2</h2>
-    <h3>Heading level 3</h3>
-    <h4>Heading level 4</h4>
-    <h5>Heading level 5</h5>
-    <h6>Heading level 6</h6>
+    <div> 
+        <h1>Heading level 1</h1>
+        <h2>Heading level 2</h2>
+        <h3>Heading level 3</h3>
+        <h4>Heading level 4</h4>
+        <h5>Heading level 5</h5>
+        <h6>Heading level 6</h6>
+    </div>
 
     <!-- Paragraphs -->
-    <p>This is a paragraph</p>
-    <p><em>The Emphasis element</em> vs <i>The Idiomatic Text element</i>.</p>
-    <p><strong>The Strong Importance element</strong> vs <b>The Bring Attention To (bold) element</b>.</p>
+    <div>
+        <p>This is a paragraph</p>
+        <p><em>The Emphasis element</em> vs <i>The Idiomatic Text element</i>.</p>
+        <p><strong>The Strong Importance element</strong> vs <b>The Bring Attention To (bold) element</b>.</p>
+        <!-- <a>: The Anchor element -->
+        <p><a href="https://example.com">The Anchor element: a</a></p>
+    
+        <!-- <abbr>: The Abbreviation element -->
+        <p><abbr>The Abbreviation (acronym) element: abbr</abbr></p>
+    
+        <!-- <address>: The Contact Address element -->
+        <address>
+            The Contact Address element: address <br>
+            <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+            <a href="tel:+13115552368">(311) 555-2368</a>
+        </address>
 
-    <!-- <a>: The Anchor element -->
-    <p><a href="https://example.com">The Anchor element: a</a></p>
+        <!-- <b>: The Bring Attention To element -->
+        <p><b>The Bring Attention To (bold) element</b></p>
+        
+        <!-- <bdi>: The Bidirectional Isolate element -->
+        <p><bdi>Bidirectional Isolate element</bdi>: bdi</p>
+    
+        <!-- <bdo>: The Bidirectional Text Override element -->
+        <p>The Bidirectional Text Override <bdo>bdo</bdo></p>
+    
+        <!-- <blockquote>: The Block Quotation element -->
+        <blockquote cite="https://devdocs.io/html/element/blockquote">
+            <p>The Block Quotation element: blockquote</p>
+        </blockquote>
 
-    <!-- <abbr>: The Abbreviation element -->
-    <p><abbr>The Abbreviation (acronym) element: abbr</abbr></p>
+        <!-- <cite>: The Citation element -->
+        <p>The Citation element <cite><a href="https://devdocs.io/html/element/cite">cite</a></cite></p>
+    
+        <!-- <code>: The Inline Code element -->
+        <p>The Inline Code element <code>code</code>.</p>
+    
+        <!-- <data>: The Data element -->
+        <p><data value="100">The Data element - data</data></p>
+    
+        <!-- <del>: The Deleted Text element -->
+        <p>The Deleted Text element: <del>del</del>.</p>
+    </div>
 
-    <!-- <address>: The Contact Address element -->
-    <address>
-        The Contact Address element: address <br>
-        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
-        <a href="tel:+13115552368">(311) 555-2368</a>
-    </address>
 
     <!-- <area>: The Image Map Area element (not included in this example)-->
 
     <!-- <article>: The Article Contents element -->
+    <h1> Article </h1>
     <article>
         <h1>Article Header 1</h1>
         <p>Paragraph inside the first level article.</p>
@@ -65,43 +101,151 @@
     </article>
 
     <!-- <aside>: The Aside element -->
+    <h1>Aside</h1>
     <aside>
         <p>Paragraph inside an aside.</p>
     </aside>
 
     <!-- <audio>: The Embed Audio element -->
-    <audio
-        controls controlsList="nodownload"
-        src="https://file-examples.com/storage/fe3f7d476663e91319de1d9/2017/11/file_example_MP3_700KB.mp3">
-        Your browser doesn't support this audio.
-    </audio>
-    <p>
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">
-        Information on Video and audio content.</a>
-    </p>
+    <div>
+        <h1>Audio</h1>
+        <audio
+            controls controlsList="nodownload"
+            src="https://file-examples.com/storage/fe3f7d476663e91319de1d9/2017/11/file_example_MP3_700KB.mp3">
+            Your browser doesn't support this audio.
+        </audio>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">
+            Information on Video and audio content.</a>
+        </p>
+    </div>
 
-    <!-- <b>: The Bring Attention To element -->
-    <p><b>The Bring Attention To (bold) element</b></p>
+    <!-- <button>: The Button element-->
+    <h1>Button</h1>
+    <p><a href="https://devdocs.io/html/element/button">The Button element</a>: <button name="button">Button</button></p>
     
-    <!-- <bdi>: The Bidirectional Isolate element -->
-    <p><bdi>Bidirectional Isolate element</bdi>: bdi</p>
 
-    <!-- <bdo>: The Bidirectional Text Override element -->
-    <p>The Bidirectional Text Override <bdo>bdo</bdo></p>
+    <!-- <canvas>: The Graphics Canvas element -->
+    <div>
+        <h1>Canvas</h1>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">The Graphics Canvas element</a></p>
+        <canvas width="50" height="50">
+            An alternative text describing what your canvas displays.
+        </canvas>
+    </div>
 
-    <!-- <blockquote>: The Block Quotation element -->
-
+        
+        
     <!-- Lists -->
-    <ul>
-        <li>This is the first list item in an unordered list.</li>
-        <li>Second List item.</li>
-        <li>Last List item.</li>
-    </ul>
+    <div>
+        <h1>Lists</h1>
+        <!-- <dl>: The Description List element -->
+        <h2>The Description List element</h2>
+        <dl>
+            <!-- <dt>: The Description Term element -->
+            <dt>The Description Term element</dt>
+            <!-- <dd>: The Description Details element -->
+            <dd>The Description Details element</dd>
+        </dl>
+
+        <ul>
+            <li>This is the first list item in an unordered list.</li>
+            <li>Second List item.</li>
+            <li>Last List item.</li>
+        </ul>
+        
+        <ol>
+            <li>This is the first list item in an ordered list.</li>
+            <li>Second List item.</li>
+            <li>Last List item.</li>
+        </ol>
+    </div>
+
+    <!-- Tables -->
+    <table>
+        <!-- <caption>: The Table Caption element -->
+        <caption>
+          Example Table Caption
+        </caption>
+        <!-- <colgroup>: The Table Column Group element -->
+        <!-- <col>: The Table Column element -->
+        <colgroup>
+            <col>
+            <col span="2">
+            <col span="2">
+        </colgroup>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Login</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>user1</td>
+            <td>user1@sample.com</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>user2</td>
+            <td>user2@sample.com</td>
+        </tr>
+    </table>
+
+    <!-- Forms -->
+    <div>
     
-    <ol>
-        <li>This is the first list item in an ordered list.</li>
-        <li>Second List item.</li>
-        <li>Last List item.</li>
-    </ol>
+        <!-- <datalist>: The HTML Data List element -->
+        <h2>DataLists</h2>
+        <h3>Textual types</h3>
+        <label for="myBrowser">Choose a browser from this list:</label>
+        <input list="browsers" id="myBrowser" name="myBrowser" />
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+        
+        <h3>Date and Time types</h3>
+        <input type="time" list="popularHours" />
+        <datalist id="popularHours">
+            <option value="12:00"></option>
+            <option value="13:00"></option>
+            <option value="14:00"></option>
+        </datalist>
+
+        <h3>Range type</h3>
+        <label for="tick">Tip amount:</label>
+        <input type="range" list="tickmarks" min="0" max="100" id="tick" name="tick" />
+        <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+        </datalist>
+        
+        <h3>Color type</h3>
+        <label for="colors">Pick a color (preferably a red tone):</label>
+        <input type="color" list="redColors" id="colors" />
+            <datalist id="redColors">
+            <option value="#800000"></option>
+            <option value="#8B0000"></option>
+            <option value="#A52A2A"></option>
+            <option value="#DC143C"></option>
+        </datalist>
+    </div>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
 </body>
 </html>
