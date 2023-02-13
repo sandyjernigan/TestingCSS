@@ -1,11 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Displaying CSS file</title>
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Using https://devdocs.io/html/ for information on elements. -->
+    <!-- header -->
+    <header>This is a header element. <br>
+        This page is just a simple page to display as many 
+        basic elements as possible without any extra attributes and 
+        how they will look with the css file selected. <br>
+    </header>
+
+    <!-- Line break <br> -->
+    <br>Line break: <br>
+
     <!-- Div -->
-    <div>The following examples will show how displayed without any extra attributes. 
-        This is a div.</div>
+    <div>
+        This is the first div. <br>
+    </div>
+
     <!-- Headers -->
     <h1>Heading level 1</h1>
     <h2>Heading level 2</h2>
@@ -16,29 +33,75 @@
 
     <!-- Paragraphs -->
     <p>This is a paragraph</p>
+    <p><em>The Emphasis element</em> vs <i>The Idiomatic Text element</i>.</p>
+    <p><strong>The Strong Importance element</strong> vs <b>The Bring Attention To (bold) element</b>.</p>
 
-    <p>This paragraph has the Anchor element: <a href="https://example.com">Website</a>.</p>
-    <p>This paragraph has the Abbreviation element: <abbr>abbr</abbr></p>
+    <!-- <a>: The Anchor element -->
+    <p><a href="https://example.com">The Anchor element: a</a></p>
 
-    <!-- Address -->
-    <p>The following uses the Contact Address element: address </p>
+    <!-- <abbr>: The Abbreviation element -->
+    <p><abbr>The Abbreviation (acronym) element: abbr</abbr></p>
+
+    <!-- <address>: The Contact Address element -->
     <address>
+        The Contact Address element: address <br>
         <a href="mailto:jim@rock.com">jim@rock.com</a><br>
         <a href="tel:+13115552368">(311) 555-2368</a>
     </address>
 
+    <!-- <area>: The Image Map Area element (not included in this example)-->
+
+    <!-- <article>: The Article Contents element -->
+    <article>
+        <h1>Article Header 1</h1>
+        <p>Paragraph inside the first level article.</p>
+        <article>
+            <h2>Article Header 2 (inside second level article)</h2>
+            <p>Paragraph inside the second level article.</p>
+            <article>
+                <p>Paragraph inside the third level article.</p>
+            </article>
+        </article>
+    </article>
+
+    <!-- <aside>: The Aside element -->
+    <aside>
+        <p>Paragraph inside an aside.</p>
+    </aside>
+
+    <!-- <audio>: The Embed Audio element -->
+    <audio
+        controls controlsList="nodownload"
+        src="https://file-examples.com/storage/fe3f7d476663e91319de1d9/2017/11/file_example_MP3_700KB.mp3">
+        Your browser doesn't support this audio.
+    </audio>
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">
+        Information on Video and audio content.</a>
+    </p>
+
+    <!-- <b>: The Bring Attention To element -->
+    <p><b>The Bring Attention To (bold) element</b></p>
+    
+    <!-- <bdi>: The Bidirectional Isolate element -->
+    <p><bdi>Bidirectional Isolate element</bdi>: bdi</p>
+
+    <!-- <bdo>: The Bidirectional Text Override element -->
+    <p>The Bidirectional Text Override <bdo>bdo</bdo></p>
+
+    <!-- <blockquote>: The Block Quotation element -->
+
     <!-- Lists -->
     <ul>
-        <li>This is a list item in an unordered list.</li>
+        <li>This is the first list item in an unordered list.</li>
         <li>Second List item.</li>
         <li>Last List item.</li>
     </ul>
     
     <ol>
-        <li>This is a list item in an ordered list.</li>
+        <li>This is the first list item in an ordered list.</li>
         <li>Second List item.</li>
         <li>Last List item.</li>
     </ol>
-
-  </body>
+</body>
 </html>
